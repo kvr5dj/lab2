@@ -1,0 +1,14 @@
+In working to attempt to improve the baseline, I had to consider the results from the first part. As seen, the inner product
+method and cosine similarity had the worst results in terms of hitting the right genre. The TFIDF cosine similarity method
+had the best results in terms of hitting the right genre. Thus, in doing my method, I considered this with the fact 
+that TFIFDF method seemed to do the best in matching relevant songs. Because of this, I combined 2 TFIDF methods, the
+TFIDF cosine similarity and TFIDF correlation. In terms of the weighting, I decided to give TFIDF cosine similarity 
+more weight (0.8) because cosine similarity seems to do the best. TFIDF correlation got a weight of 0.2. In terms of
+my results, I got a hit mean of about 0.24, which is higher than all of the baselines. Thus, I am happy with the results
+as this shows my method does slightly improve the baseline.
+
+Thus, while I feel the existing option of the TFIDF cosine similarity worked well, I felt maybe I could leverage the fact
+that TFIDF worked really well with the fact the correlation also seems to do well. This led me to why I decided
+to combine both TFIDF correlation and TFIDF cosine similarity. This found a way to outperform the available baselines 
+because it combined 2 good methods rather than just using 1. This is usually an advantage of using something Like
+a weighted average because it can combine 2 methods to make a stronger one. 
